@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-primary: #873cb2;
+    --color-primary-rgb: 135, 60, 178;
+    --color-text: #222222;
+    --color-white: #ffffff;
+    --color-dark: #000000;
+    --color-warning: #ffd000;
+    --color-text-muted: #676666;
+    --color-bg-primary: #f7f7f7;
+    --color-bg-primary-rgb: 247, 247, 247;
+    --color-bg-secondary: #ffffff;
+    --color-bg-secondary-rgb: 255, 255, 255;
+    --transition: all 0.4s ease-in-out;
+}
+
+[data-theme="dark"] {
+    --color-text: #ffffff;
+    --color-text-muted: #a1a0a0;
+    --color-bg-primary: #0a0a0c;
+    --color-bg-primary-rgb: 10, 10, 12;
+    --color-bg-secondary: #171719;
+    --color-bg-secondary-rgb: 23, 23, 25;
+}

@@ -1,0 +1,10 @@
+export {default as airbnb} from "./airbnb.png";
+export {default as airpeace} from "./airpeace.png";
+export {default as bolt} from "./bolt.png";
+export {default as booking} from "./booking.png";
+export {default as glovo} from "./glovo.png";
+export {default as hostelworld} from "./hostelworld.png";
+export {default as makemytrip} from "./makemytrip.png";
+export {default as trip} from "./trip.png";
+export {default as uber} from "./uber.png";
+export {default as wakanow} from "./wakanow.png";
