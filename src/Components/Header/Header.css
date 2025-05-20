@@ -110,7 +110,7 @@
 
 @media (max-width: 1400px) {
   #header .section-container {
-    min-height: 1000vh;
+    min-height: 100vh;
   }
 }
 
