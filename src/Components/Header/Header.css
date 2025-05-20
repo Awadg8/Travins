@@ -1,0 +1,144 @@
+#header {
+  overflow: hidden;
+}
+
+#header .world {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: fit-content;
+  height: 100vh;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
+}
+
+#header .section-container {
+  padding: 120px 1rem 50px 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+#header .grid {
+  display: grid;
+  grid-template-columns: auto 500px;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+  background-image: url("../../assets/bg-3.svg");
+  background-repeat: no-repeat;
+  background-size: 400px 200px;
+  background-position: bottom left;
+}
+
+#header .grid > .column {
+  position: relative;
+}
+
+#header .heading {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
+  font-family: cursive, fantasy, monospace;
+}
+
+#header .sub-heading {
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+#header .airplane {
+  position: relative;
+  width: 100%;
+  animation: animate 2s ease infinite;
+}
+
+#header .airplane img {
+  position: relative;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+}
+
+#header .grid > .column:nth-child(2) {
+  background-image: url("../../assets/bg-2.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#header .bento-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+#header .bento-grid > .grid-item {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#header .bento-grid > .grid-item > .item {
+  height: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+#header .bento-grid > .grid-item:nth-child(1) > .item {
+  height: auto;
+}
+
+#header .bento-grid .rating {
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#header .bento-grid .rating .stars-container {
+  color: var(--color-warning);
+}
+
+/* Header Responsiveness */
+
+@media (max-width: 1400px) {
+  #header .section-container {
+    min-height: 1000vh;
+  }
+}
+
+@media (max-width: 960px) {
+  #header .heading {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media (max-width: 900px) {
+  #header .grid {
+    grid-template-columns: 100%;
+  }
+
+  #header .grid > .column {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  #header .airplane {
+    position: static;
+  }
+}
+
+@media (max-width: 500px) {
+  #header .bento-grid .rating {
+    flex-direction: column;
+  }
+}

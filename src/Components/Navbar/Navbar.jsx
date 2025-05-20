@@ -3,17 +3,37 @@ import "./Navbar.css";
 import { FaChevronDown } from "react-icons/fa";
 import { services } from "../../data";
 import tripImage from "../../assets/trip-map.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  const toggleNavbar = () => {
+    if (window.scrollY > 100) {
+      setShowNavbar(true);
+    } else {
+      setShowNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleNavbar);
+    return () => window.removeEventListener("scroll", toggleNavbar);
+  }, []);
 
   return (
     <>
-    {showSidebar && <div className="sidebar-overlay" onClick={()=> setShowSidebar(!showSidebar)}></div>}
-      <nav className="flex navbar">
+      {showSidebar && (
+        <div
+          className="sidebar-overlay"
+          onClick={() => setShowSidebar(!showSidebar)}
+        ></div>
+      )}
+
+      <nav className={`flex navbar ${showNavbar && "blur drop"}`}>
         <Logo />
 
         <ul className={`flex navigation ${showSidebar && "show"}`}>
