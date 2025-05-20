@@ -1,0 +1,14 @@
+.logo {
+  justify-content: flex-start;
+}
+
+.logo > img {
+  object-fit: contain;
+  width: 30px;
+}
+
+.logo > h1 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Inter";
+}

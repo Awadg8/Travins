@@ -1,0 +1,189 @@
+.navbar {
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar .navigation {
+  list-style: none;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.navbar .nav-item {
+  position: relative;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.navbar .nav-item > .nav-link {
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 500;
+}
+
+.navbar .nav-item:hover > .nav-link {
+  color: var(--color-primary);
+}
+
+.navbar .nav-link .chevron-icon {
+  transition: var(--transition);
+}
+
+.navbar .nav-item > .nav-drop {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  z-index: 110;
+  width: 450px;
+  height: 0;
+  overflow: hidden;
+  margin: 20px 0 0 20px;
+  opacity: 0;
+}
+
+.navbar .nav-item:hover > .nav-drop {
+  transition: var(--transition);
+  overflow: visible;
+  height: auto;
+  transform: translate(-20px, -20px);
+  opacity: 1;
+}
+
+.navbar .nav-item:hover .nav-link .chevron-icon {
+  transform: rotate(-180deg);
+}
+
+.navbar .drop-wrapper {
+  background: rgba(var(--color-bg-secondary-rgb), 0.9);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  display: grid;
+  grid-template-columns: auto 200px;
+  gap: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .drop-wrapper .left-column {
+  background: var(--color-bg-secondary);
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+.navbar .drop-wrapper .service {
+  gap: 1rem;
+  margin: 15px 0;
+  transition: var(--transition);
+}
+
+.navbar .drop-wrapper .service:hover h4 {
+  color: var(--color-primary);
+}
+
+.navbar .drop-wrapper .icon {
+  color: var(--color-primary);
+  font-size: 18px;
+}
+
+.navbar .drop-wrapper h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.navbar .drop-wrapper h4,
+.navbar .drop-wrapper p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navbar .drop-wrapper p {
+  font-weight: 400;
+}
+
+.navbar .drop-wrapper .btn {
+  display: block;
+  margin: 0.7rem 0;
+  text-align: center;
+}
+
+.navbar .drop-wrapper .drop-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 100px;
+}
+
+.navbar .btn-wrapper {
+  gap: 1rem;
+}
+
+.navbar .menu {
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.sidebar-overlay {
+  background: rgba(1, 1, 1, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Responsiveness of Navbar */
+@media (max-width: 1060px) {
+  .navbar .signin-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .navbar .navigation {
+    position: fixed;
+    left: -500px;
+    top: 0;
+    z-index: 110;
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    min-height: 100vh;
+    background: var(--color-bg-secondary);
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    transition: var(--transition);
+  }
+
+  .navbar .navigation.show {
+    left: 0;
+  }
+
+  .navbar .menu {
+    display: flex;
+  }
+
+  .navbar .nav-item {
+    justify-content: flex-start;
+  }
+
+  .navbar .nav-item > .nav-drop,
+  .navbar .nav-item .chevron-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .navbar .get-started-btn {
+    display: none;
+  }
+}

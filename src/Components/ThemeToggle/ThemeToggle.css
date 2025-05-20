@@ -1,0 +1,14 @@
+.theme-toggle{
+    font-size: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.theme-toggle input{
+    position: absolute;
+    top: -999px;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
