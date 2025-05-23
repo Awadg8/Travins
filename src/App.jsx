@@ -4,6 +4,7 @@ import Services from "./Components/Services/Services";
 import PopularDestinations from "./Components/PopularDestinations/PopularDestinations";
 import About from "./Components/About/About";
 import WhyChooseUs from "./Components/WhyChooseUs/WhyChooseUs";
+import Testimonials from "./Components/Testimonials/Testimonials";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <PopularDestinations />
       <About />
       <WhyChooseUs />
+      <Testimonials />
     </>
   );
 };
