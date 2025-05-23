@@ -1,0 +1,90 @@
+#about {
+  background: var(--color-bg-secondary);
+  background-image: url(../../assets/bg-1.svg);
+  background-size: 500px 400px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  overflow: hidden;
+}
+
+#about .section-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+#about img {
+  object-fit: contain;
+}
+
+#about .bento-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+  background-image: url(../../assets/bg-2.svg);
+  background-repeat: no-repeat;
+}
+
+#about .grid-item .item {
+  min-height: 200px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+#about .grid-item .item:first-child {
+  margin-bottom: 1rem;
+}
+
+#about .achievements {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+#about .achievement {
+  text-align: center;
+  padding: 1rem 10px;
+  border-radius: 1.5rem;
+  transition: var(--transition);
+}
+
+#about .achievement:hover {
+  background: rgba(var(--color-primary-rgb), 0.1);
+}
+
+#about .achievements .achievement .icon {
+  font-size: 30px;
+  color: var(--color-primary);
+}
+
+#about .achievements .achievement .title {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/* Responsiveness of About */
+
+@media (max-width: 1000px) {
+  #about .achievements .achievement .title {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 900px) {
+  #about .section-container {
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+
+  #about .bento-grid {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  #about .achievements .achievement .title {
+    font-size: 30px;
+  }
+}
