@@ -3,7 +3,7 @@ import Header from "./Components/Header/Header";
 import Services from "./Components/Services/Services";
 import PopularDestinations from "./Components/PopularDestinations/PopularDestinations";
 import About from "./Components/About/About";
-
+import WhyChooseUs from "./Components/WhyChooseUs/WhyChooseUs";
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
       <Services />
       <PopularDestinations />
       <About />
+      <WhyChooseUs />
     </>
   );
 };

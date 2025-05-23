@@ -1,0 +1,54 @@
+#why-choose-us {
+  background-image: url("../../assets/bg-4.svg");
+  overflow: hidden;
+}
+
+#why-choose-us .overlay {
+  background: rgba(var(--color-bg-primary-rgb), 0.8);
+}
+
+#why-choose-us .section-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+#why-choose-us .why-choose-us {
+  align-items: flex-start;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+#why-choose-us .icon {
+  font-size: 30px;
+  transition: var(--transition);
+}
+
+#why-choose-us .why-choose-us:hover .icon {
+  transform: scale(1.1);
+  color: var(--color-primary);
+}
+
+#why-choose-us .title {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+#why-choose-us .description {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* Responsiveness of whyChooseUS */
+
+@media (max-width: 850px) {
+  #why-choose-us .section-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  #why-choose-us .section-container {
+    grid-template-columns: 100%;
+  }
+}
