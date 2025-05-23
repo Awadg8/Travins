@@ -1,0 +1,135 @@
+#destinations {
+    overflow: hidden;
+    background: var(--color-dark);
+    color: var(--color-white);
+    background-image: url("../../assets/bg-3.svg");
+    background-size: 50px;
+}
+
+#destinations .section-header p{
+    opacity: 0.8;
+}
+
+#destinations .destinations{
+    margin-top: 2rem;
+    height: 100%;
+}
+
+#destinations .slide-button{
+    width: 3rem;
+    height: 3rem;
+    min-width: 3rem;
+    min-height: 3rem;
+    max-width: 3rem;
+    max-height: 3rem;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    position: absolute;
+    background: var(--color-primary);
+    font-size: 1.5rem;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#destinations .slide-button:hover{
+    background: var(--color-bg-secondary);
+    color: var(--color-text);
+}
+
+#destinations .prev-button{
+    left: 0;
+}
+
+#destinations .next-button{
+    right: 0;
+}
+
+#destinations .destination{
+    height: auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#destinations .destination::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    z-index: 2;
+    background: linear-gradient(to bottom, transparent, rgba(1,1,1,1));
+
+}
+
+#destinations .destination .rating{
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    right: 10px;
+    background: rgba(var(--color-bg-secondary-rgb),0.8);
+    padding: 0 1.5rem;
+    border-radius: 1.5rem;
+    gap: 10px;
+    color: var(--color-text);
+}
+
+#destinations .destination .preview-box{
+    position: absolute;
+    bottom: 20px;
+    padding: 1rem;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+#destinations .destination:hover .preview-box{
+    bottom: -100%;
+}
+
+#destinations .destination .preview-box .country{
+    font-size: 30px;
+}
+
+#destinations .destination .preview-box .title{
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+#destinations .destination .details-box{
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    color: var(--color-text);
+    transition: var(--transition);
+}
+
+#destinations .destination:hover .details-box{
+    transform: translate(-50%,-50%) scale(1)
+}
+
+#destinations .destination .details-box .detail-item{
+    background: rgba(var(--color-bg-secondary-rgb),0.8);
+    gap: 10px;
+    padding: 0.5rem 1rem;
+    margin: 10px 0;
+    border-radius: 1.5rem;
+}
+
+#destinations .destination .details-box .details-item .icon {
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+#destinations .bottom-container{
+    margin-top: 40px;
+}
