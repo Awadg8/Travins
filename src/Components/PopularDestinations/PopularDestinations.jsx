@@ -26,7 +26,7 @@ const PopularDestinations = () => {
   );
 
   return (
-    <section id="destinations">
+    <section id="destinations" data-aos="zoom-up">
       <div className="section-container">
         <div className="section-header">
           <h2>Where Will</h2>
@@ -64,7 +64,12 @@ const PopularDestinations = () => {
           </div>
 
           {popularDestinations.map((destination, key) => (
-            <SwiperSlide className="blur destination" key={key}>
+            <SwiperSlide
+              className="blur destination"
+              data-aos="fade-up"
+              data-aos-delay={500 * (key + key)}
+              key={key}
+            >
               <img src={destination.image} alt={destination.name} />
               <div className="flex-center blur rating">
                 <h2>{destination.rating}</h2>
@@ -114,7 +119,12 @@ const PopularDestinations = () => {
         </Swiper>
 
         <div className="flex-center bottom-container">
-          <a href="#" className="btn btn-primary">
+          <a
+            href="#"
+            className="btn btn-primary"
+            data-aos="fade-up"
+            data-aos-delay="1500"
+          >
             All Destinations
           </a>
         </div>

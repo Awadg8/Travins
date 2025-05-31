@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
       <div className="overlay">
         <div className="section-container">
           {whyChooseUs.map((list, key) => (
-            <div className="flex why-choose-us" key={key}>
+            <div className="flex why-choose-us" data-aos="fade-left" data-aos-delay={500 * (key + key)} key={key}>
               <div className="flex-center icon">
                 <list.icon />
               </div>

@@ -15,11 +15,12 @@ const Header = () => {
         <img src={worldImage} alt="" />
       </div>
 
-      <div className="section-container">
+      <div className="section-container" data-aos="zoom-in"
+           >
         <div className="grid">
           <div className="column">
             <div className="info">
-              <h1 className="heading">
+              <h1 className="heading" data-aos="fade-zoom-in">
                 Explore the World, Your Way With{" "}
                 <span className="primary">Travins</span>
               </h1>
@@ -29,11 +30,12 @@ const Header = () => {
               </p>
             </div>
 
-            <div className="airplane">
+            <div className="airplane" data-aos="fade-down" data-aos-delay="1300">
               <img src={airplaneImage} alt="" />
             </div>
           </div>
-          <div className="column">
+
+          <div className="column" data-aos="zoom-in-up" data-aos-delay="1300">
             <div className="bento-grid">
               <div className="flex grid-item">
                 <div className="item blur flex rating">

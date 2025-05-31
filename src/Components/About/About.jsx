@@ -39,20 +39,20 @@ const About = () => {
     <section id="about">
       <div className="section-container">
         <div className="bento-grid">
-          <div className="grid-item">
+          <div className="grid-item" data-aos="fade-right" data-aos-delay="700">
             <img src={travellerMaleImage} alt="" />
           </div>
           <div className="grid-item">
-            <div className="item">
+            <div className="item" data-aos="fade-up" data-aos-delay="800">
               <img src={hotelImage} alt="" />
             </div>
-            <div className="item">
+            <div className="item" data-aos="fade-up" data-aos-delay="1000">
               <img src={cruiseShipImage} alt="" />
             </div>
           </div>
         </div>
 
-        <div>
+        <div data-aos="fade-up" data-aos-delay="1000">
           <h3 className="primary">About Us</h3>
           <h2>Who We Are</h2>
           <p className="text-muted">

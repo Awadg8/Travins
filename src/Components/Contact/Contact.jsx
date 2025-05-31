@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="section-container">
         <Faq />
 
-        <div className="column">
+        <div className="column" data-aos="fade-left">
           <form className="contact-form">
             <h3>Still Got Questions?</h3>
             <h2 className="primary">Reach out to us</h2>

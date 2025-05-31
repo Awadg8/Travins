@@ -37,12 +37,16 @@ const Navbar = () => {
         <Logo />
 
         <ul className={`flex navigation ${showSidebar && "show"}`}>
-          <li className="flex-center nav-item">
+          <li className="flex-center nav-item" data-aos="fade-left">
             <a href="#header" className="flex nav-link">
               Home
             </a>
           </li>
-          <li className="flex-center nav-item">
+          <li
+            className="flex-center nav-item"
+            data-aos="fade-left"
+            data-aos-delay="600"
+          >
             <a href="#services" className="flex nav-link">
               Services
               <FaChevronDown className="chevron-icon" />
@@ -87,40 +91,72 @@ const Navbar = () => {
               </div>
             </div>
           </li>
-          <li className="flex-center nav-item">
+          <li
+            className="flex-center nav-item"
+            data-aos="fade-left"
+            data-aos-delay="700"
+          >
             <a href="#destinations" className="flex nav-link">
               Destinations
             </a>
           </li>
-          <li className="flex-center nav-item">
+          <li
+            className="flex-center nav-item"
+            data-aos="fade-left"
+            data-aos-delay="800"
+          >
             <a href="#about" className="flex nav-link">
               About Us
             </a>
           </li>
-          <li className="flex-center nav-item">
+          <li
+            className="flex-center nav-item"
+            data-aos="fade-left"
+            data-aos-delay="900"
+          >
             <a href="#testimonials" className="flex nav-link">
               Testimonials
             </a>
           </li>
-          <li className="flex-center nav-item">
+          <li
+            className="flex-center nav-item"
+            data-aos="fade-left"
+            data-aos-delay="1000"
+          >
             <a href="#contact" className="flex nav-link">
               Contact Us
             </a>
           </li>
         </ul>
 
-        <div className="flex-center btn-wrapper">
+        <div
+          className="flex-center btn-wrapper"
+          data-aos="fade-left"
+          data-aos-delay="1100"
+        >
           <ThemeToggle />
-          <a href="#" className="btn btn-primary get-started-btn">
+          <a
+            href="#"
+            className="btn btn-primary get-started-btn"
+            data-aos="fade-left"
+            data-aos-delay="1200"
+          >
             Get started
           </a>
-          <a href="#" className="btn signin-btn">
+          <a
+            href="#"
+            className="btn signin-btn"
+            data-aos="fade-left"
+            data-aos-delay="1300"
+          >
             Sign In
           </a>
 
           <div
             className="flex-center menu"
             onClick={() => setShowSidebar(!showSidebar)}
+            data-aos="fade-left"
+            data-aos-delay="1200"
           >
             <TiThMenu />
           </div>

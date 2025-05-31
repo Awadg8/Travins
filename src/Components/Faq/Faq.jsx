@@ -15,7 +15,7 @@ const Faq = () => {
   };
 
   return (
-    <section id="faq">
+    <section id="faq" data-aos="fade-right">
       <h1>
         Frequently <span className="primary">Asked Question</span>
       </h1>
