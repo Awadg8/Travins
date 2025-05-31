@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="column">
           <form className="contact-form">
             <h3>Still Got Questions?</h3>
-            <h2 className="primary">React out to us</h2>
+            <h2 className="primary">Reach out to us</h2>
             <div className="flex row">
               <input
                 type="text"
