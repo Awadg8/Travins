@@ -1,0 +1,97 @@
+#contact {
+  overflow: hidden;
+}
+
+#contact .section-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+#contact .contact-form {
+  padding: 20px;
+  width: 100%;
+  background: rgba(var(--color-bg-secondary-rgb), 0.8);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+#contact .row {
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+#contact .control {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 1.5rem;
+  margin: 20px 0;
+  color: var(--color-text);
+  font-size: 15px;
+  overflow: hidden;
+  transition: var(--transition);
+  border: 1px solid rgba(89, 88, 88, 0.633);
+  border-width: 2px;
+  resize: none;
+  height: 50px;
+  background: transparent;
+}
+
+#contact .control:focus {
+  border-color: var(--color-primary);
+}
+
+#contact textarea.control {
+  height: 130px;
+  padding: 20px;
+}
+
+#contact .submit-btn {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+#contact .section-container .column,
+#contact .contact-options {
+  background-image: url("../../assets/bg-5.svg");
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+}
+
+#contact .option {
+  gap: 1rem;
+  background: rgba(var(--color-bg-secondary-rgb), 0.8);
+  padding: 10px 20px;
+  border-radius: 1.5rem;
+  margin: 10px 0;
+}
+
+#contact .option .icon {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+#contact .option:hover .icon {
+  transform: scale(1.1);
+}
+
+#contact .option .name {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* Responsiveness Of Contact Page */
+
+@media (max-width: 768px) {
+  #contact .section-container {
+    grid-template-columns: 100%;
+  }
+}

@@ -5,6 +5,7 @@ import PopularDestinations from "./Components/PopularDestinations/PopularDestina
 import About from "./Components/About/About";
 import WhyChooseUs from "./Components/WhyChooseUs/WhyChooseUs";
 import Testimonials from "./Components/Testimonials/Testimonials";
+import Contact from "./Components/Contact/Contact";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <WhyChooseUs />
       <Testimonials />
+      <Contact />
     </>
   );
 };
