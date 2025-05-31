@@ -6,6 +6,7 @@ import About from "./Components/About/About";
 import WhyChooseUs from "./Components/WhyChooseUs/WhyChooseUs";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import Contact from "./Components/Contact/Contact";
+import Newletter from "./Components/Newletter/Newletter";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <WhyChooseUs />
       <Testimonials />
       <Contact />
+      <Newletter />
     </>
   );
 };

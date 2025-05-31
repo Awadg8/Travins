@@ -1,0 +1,53 @@
+#newsletter {
+  padding: 30px 1rem;
+  overflow: hidden;
+}
+
+#newsletter .section-container {
+  background: var(--color-dark);
+  background-image: url("../../assets/bg-4.svg");
+  color: var(--color-white);
+  border-radius: 1.5rem;
+}
+
+#newsletter form {
+  align-items: stretch;
+  gap: 1rem;
+  margin: auto;
+  margin-top: 3rem;
+  max-width: 700px;
+}
+
+#newsletter input {
+  flex: 1;
+  display: inline-block;
+  height: 50px;
+  padding: 0 20px;
+
+  background: var(--color-bg-secondary);
+  font-size: 20px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  color: var(--color-text);
+}
+
+#newsletter .btn {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+/* Responsiveness Of Newstetter  */
+
+@media (max-width:500px) {
+    #newsletter form{
+        flex-direction: column;
+
+    }
+
+    #newsletter input{
+        flex: none;
+        
+    }
+}
